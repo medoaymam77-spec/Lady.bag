@@ -158,7 +158,10 @@ text-decoration:none;
 
 <div class="card">
 
-<img src="6b3cdedc-0ef5-4e59-a97d-f05f952dcd1e.jpeg" alt="Red Bag">
+<img id="bagImage"
+src="6b3cdedc-0ef5-4e59-a97d-f05f952dcd1e.jpeg"
+alt="Bag"
+onclick="changeImage()">
 
 <div class="info">
 
@@ -203,6 +206,17 @@ Instagram @lady_bag.10
 <p>© 2026 Lady Bag</p>
 
 </footer>
+<script>
+function changeImage() {
+  const img = document.getElementById("bagImage");
 
+  if (img.src.includes("6b3cdedc-0ef5-4e59-a97d-f05f952dcd1e.jpeg")) {
+    img.src = "f0a41151-d5f9-4439-ad17-3fe66fc741a5.jpeg";
+  } else {
+    img.src = "6b3cdedc-0ef5-4e59-a97d-f05f952dcd1e.jpeg";
+  }
+}
+</script>
+    
 </body>
 </html>
